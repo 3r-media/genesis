@@ -1,0 +1,68 @@
+{
+    "name": "rrr/genesis",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aubrey Robertson",
+            "email": "aubrey@disciplego.com",
+            "homepage": "https://3r.media"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../genesis"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.3r.media"
+        }
+    ],
+    "homepage": "https://github.com/rrr/genesis",
+    "keywords": ["Laravel", "3r.Media", "Rrr", "Genesis"],
+    "require": {
+        "php": "^8.3",
+        "illuminate/contracts": "^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.21.2",
+        "mockery/mockery": "^1.6.11",
+        "nunomaduro/collision": "^8.1.1",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-arch": "^3.1",
+        "pestphp/pest-plugin-faker": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.1",
+        "pestphp/pest-plugin-livewire": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rrr\\Genesis\\": "src/",
+            "Rrr\\Genesis\\Database\\Factories\\": "database/factories/",
+            "Rrr\\Genesis\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rrr\\Genesis\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rrr\\Genesis\\GenesisServiceProvider"
+            ],
+            "aliases": {
+                "Genesis": "Rrr\\Genesis\\Facades\\Genesis"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
