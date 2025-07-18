@@ -19,7 +19,7 @@
             "url": "https://packages.3r.media"
         }
     ],
-    "homepage": "https://github.com/rrr/genesis",
+    "homepage": "https://github.com/3r-media/genesis",
     "keywords": ["Laravel", "3r.Media", "Rrr", "Genesis"],
     "require": {
         "php": "^8.3",
