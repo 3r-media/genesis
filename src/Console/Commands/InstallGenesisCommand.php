@@ -40,6 +40,7 @@ class InstallGenesisCommand extends Command
             'README.md' => 'README.md',
             'phpunit.xml' => 'phpunit.xml',
             'tests' => 'tests',
+            'tests/packages/.gitkeep'=> 'tests/packages/.gitkeep',
         ], $force);
 
         if (empty($published)) {
