@@ -34,7 +34,7 @@ class InstallGenesisCommand extends Command
         $publisher = new StubPublisher($stubDir, $appPath);
 
         $published = $publisher->publish([
-            '.gitignore' => '.gitignore',
+            'gitignore.stub' => '.gitignore',
             'todo/install.md' => 'todo/install.md',
             '.env.example' => '.env.example',
             'README.md' => 'README.md',
